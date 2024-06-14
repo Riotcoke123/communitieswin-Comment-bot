@@ -23,7 +23,7 @@ def check_comment_exists(driver, comment_text):
     return False
 
 def check_bot_comment_exists(driver):
-    bot_comments = driver.find_elements(By.XPATH, "//*[contains(text(), 'IP2 BOT')]")  # Adjust the XPath based on the actual comment content
+    bot_comments = driver.find_elements(By.XPATH, "//*[contains(text(), '')]")  # Adjust the XPath based on the actual comment content
     return len(bot_comments) > 0
 
 # Path to the comments text file
