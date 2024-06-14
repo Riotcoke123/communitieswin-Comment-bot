@@ -27,7 +27,7 @@ def check_bot_comment_exists(driver):
     return len(bot_comments) > 0
 
 # Path to the comments text file
-comments_file_path = 'C:\\Users\\srrm4\\OneDrive\\Desktop\\comments.txt'
+comments_file_path = 'comments.txt'
 
 # Read comments from the file
 comments = read_comments(comments_file_path)
@@ -61,7 +61,7 @@ try:
     print("Username field located")
 
     # Find and fill the username field
-    username = "IP2_BOT"
+    username = ""
     print("Entering username...")
     username_field.send_keys(username)
 
@@ -69,7 +69,7 @@ try:
     print("Waiting for the password field...")
     password_field = wait_for_element(driver, By.CSS_SELECTOR, "#field-3")
     print("Password field located")
-    password = "Moto3030!"
+    password = ""
     print("Entering password...")
     password_field.send_keys(password)
 
